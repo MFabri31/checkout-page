@@ -32,5 +32,140 @@
 
     <title>Devchallenges | checkout page</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <section class="checkout">
+        <h3>Checkout</h3>
+        <form class="form">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Contact information</legend>
+            <div class="form__fields">
+              <label for="email" class="form__label">Email</label
+              ><input
+                type="text"
+                class="form__field"
+                id="email"
+                name="email"
+                placeholder="Enter your email.."
+              />
+            </div>
+            <div class="form__fields">
+              <label for="phone" class="form__label">Phone</label
+              ><input
+                type="text"
+                class="form__field"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone..."
+              />
+            </div>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Shippíng address</legend>
+            <div class="form__fields">
+              <label for="name" class="form__label">Full name</label
+              ><input
+                type="text"
+                class="form__field"
+                id="name"
+                name="name"
+                placeholder="Your name..."
+              />
+            </div>
+            <div class="form__fields">
+              <label for="address" class="form__label">Address</label
+              ><input
+                type="text"
+                class="form__field"
+                id="address"
+                name="address"
+                placeholder="Your address..."
+              />
+            </div>
+            <div class="form__fields">
+              <label for="city" class="form__label">City</label
+              ><input
+                type="text"
+                class="form__field"
+                id="city"
+                name="city"
+                placeholder="Your city..."
+              />
+            </div>
+            <div class="form__fields">
+              <div class="">
+                <label for="country" class="form__label">Country</label>
+                <select name="country" id="country">
+                  <option selected>...</option>
+                  <option value="argentina">Argentina</option>
+                  <option value="brasil">Brasil</option>
+                  <option value="colombia">Colombia</option>
+                </select>
+              </div>
+              <div class="">
+                <label for="postalCode" class="form__label">Postal code</label
+                ><input
+                  type="text"
+                  class="form__field"
+                  id="postalCode"
+                  name="postalCode"
+                  placeholder="Your postal code..."
+                />
+              </div>
+            </div>
+            <div class="form__fields">
+              <input type="checkbox" class="form__field" id="checkbox" />
+              <label for="checkbox">Save this information for next time</label>
+            </div>
+            <button>Continue</button>
+          </fieldset>
+        </form>
+        <div class="card">
+          <div class="card__body">
+            <div class="card__item">
+              <img src="./assets/images/photo1.png" class="card__img"></img>
+              <div class="card__info">
+                <p class="card__title">Vintage Backbag</p>
+                <p class="card__price">$54.99 <span>94.99</span></p>
+                <div class="card__buttons">
+                  <button>-</button>
+                  <p>1</p>
+                  <button>+</button>
+                </div>
+              </div>
+            </div>
+            <div class="card__item">
+              <img src="./assets/images/photo2.png" class="card__img"></img>
+              <div class="card__info">
+                <p class="card__title">Levi Shoes</p>
+                <p class="card__price">$74.99<span>$124.99</span></p>
+                <div class="card__buttons">
+                  <button>-</button>
+                  <p>1</p>
+                  <button>+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card__footer">
+            <div class="card__shipping">
+              <p>Shipping</p>
+              <p>$19</p>
+            </div>
+            <div class="card__total">
+              <p>Total</p>
+              <p>$147.98</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <small>
+        created by
+        <a class="main-footer__link" href="https://devchallenges.io/portfolio/MFabri31" target="blank">Medina Fabricio</a>
+        - devChallenges.io
+      </small>
+    </footer>
+  </body>
 </html>
