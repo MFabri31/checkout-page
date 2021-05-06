@@ -1,3 +1,10 @@
+:root {
+  --bg-light: #f2f2f2;
+  --bg-light2: #e0e0e0;
+  --bg-dark: #4e5150;
+  --bg-dark2: #bdbdbd;
+  --bg-alt: #f2994a;
+}
 html {
   box-sizing: border-box;
 }
@@ -22,3 +29,107 @@ li {
 ul {
   margin: 0;
 }
+
+/* --------------------
+        CHECKOUT
+----------------------*/
+.checkout {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.title {
+  color: var(--bg-dark);
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+/* --------------------
+        CARD
+----------------------*/
+
+.card {
+  order: -1;
+  padding: 1.5em;
+  background-color: var(--bg-light);
+  border-radius: 16px;
+  margin-bottom: 3rem;
+}
+
+.card__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  height: 9rem;
+}
+
+.card__img,
+.card__info {
+  width: 50%;
+  height: 9rem;
+}
+
+.card__img {
+  border-radius: 16px;
+}
+
+.card__info {
+  margin-left: 1rem;
+}
+
+.card__title {
+  color: var(--bg-dark);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.card__price {
+  color: var(--bg-alt);
+  font-size: 0.9rem;
+}
+
+.card__price span {
+  margin-left: 0.5rem;
+  color: var(--bg-dark);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: line-through;
+}
+
+.card__buttons {
+  width: 9rem;
+  padding: 0 1em;
+  margin-top: 2.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--bg-dark2);
+  border-radius: 16px;
+}
+
+.button {
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1;
+  color: var(--bg-dark);
+  background-color: var(--bg-light2);
+  border: none;
+}
+
+.card__shipping,
+.card__total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__shipping {
+  border-top: 1px solid var(--bg-light2);
+  border-bottom: 1px solid var(--bg-light2);
+}
+
+/* --------------------
+        FORM
+----------------------*/
