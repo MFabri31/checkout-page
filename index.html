@@ -41,7 +41,10 @@
             <legend class="form__legend">Contact information</legend>
             <div class="form__fields">
               <label for="email" class="form__label">Email</label
-              ><input
+                
+              >
+              <i class="fas fa-envelope"></i>
+              <input
                 type="text"
                 class="form__field"
                 id="email"
@@ -51,7 +54,9 @@
             </div>
             <div class="form__fields">
               <label for="phone" class="form__label">Phone</label
-              ><input
+              >
+              <i class="fas fa-phone-alt"></i>
+              <input
                 type="text"
                 class="form__field"
                 id="phone"
@@ -64,7 +69,9 @@
             <legend class="form__legend">Shippíng address</legend>
             <div class="form__fields">
               <label for="name" class="form__label">Full name</label
-              ><input
+              >
+              <i class="fas fa-user-circle"></i>
+              <input
                 type="text"
                 class="form__field"
                 id="name"
@@ -74,7 +81,9 @@
             </div>
             <div class="form__fields">
               <label for="address" class="form__label">Address</label
-              ><input
+              >
+              <i class="fas fa-home"></i>
+              <input
                 type="text"
                 class="form__field"
                 id="address"
@@ -84,7 +93,9 @@
             </div>
             <div class="form__fields">
               <label for="city" class="form__label">City</label
-              ><input
+              >
+              <i class="fas fa-city"></i>
+              <input
                 type="text"
                 class="form__field"
                 id="city"
@@ -93,18 +104,21 @@
               />
             </div>
             <div class="form__fields">
-              <div class="">
+              <div>
                 <label for="country" class="form__label">Country</label>
-                <select name="country" id="country">
+                <i class="fas fa-globe-americas"></i>
+                <select name="country" id="country" class="form__field">
                   <option selected>...</option>
                   <option value="argentina">Argentina</option>
                   <option value="brasil">Brasil</option>
                   <option value="colombia">Colombia</option>
                 </select>
               </div>
-              <div class="">
+              <div>
                 <label for="postalCode" class="form__label">Postal code</label
-                ><input
+                >
+                <i class="fas fa-mail-bulk"></i>
+                <input
                   type="text"
                   class="form__field"
                   id="postalCode"
@@ -114,10 +128,10 @@
               </div>
             </div>
             <div class="form__fields">
-              <input type="checkbox" class="form__field" id="checkbox" />
+              <input type="checkbox" class="form__field form__checkbox" id="checkbox" />
               <label for="checkbox">Save this information for next time</label>
             </div>
-            <button>Continue</button>
+            <button class="form__button">Continue</button>
           </fieldset>
         </form>
         <div class="card">
